@@ -6,9 +6,9 @@ Function of this bot includes:
 3. saving a list of slug of the collection the user is interested in
 
 Features of the bot includes:
-1. Checking the vaidity of the slug to make sure only valid and the right collections are being monitored
+1. Checking the vaidity of the slug to make sure only valid collections are being monitored
 2. Checking that price target set by user is not equal to the current floor price of the collection the user is interested in monitoring
-3. Checking that the commands issued are correect
+3. Checking that the commands issued are correct
 
 Limitations of the bot:
 1. Using opensea public API with a rate limit of 4 requests per second with the actual rate limit being lower than that
