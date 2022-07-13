@@ -26,45 +26,45 @@ To monitor collections:
 
 !add {slug} {price target}
 
-e.g. !add hapeprime 1 
+e.g. !add hapeprime 1 <br /> <br />
 
 
 To remove monitored collections:
 
 !dlt (slug}
 
-e.g. !dlt hapeprime
+e.g. !dlt hapeprime <br /> <br />
 
 
 To view your monitored collections:
 
-$view
+$view <br /> <br />
 
 
 To save slugs to your personalised list:
 
 !save {slug}
 
-e.g. !save hapeprime
+e.g. !save hapeprime <br /> <br />
 
 
 To remove collections from personalised list:
 
 !rmv (slug}
 
-e.g. !rmv hapeprime
+e.g. !rmv hapeprime <br /> <br />
 
 
 To view your personalised list:
 
-!list
+!list <br /> <br />
 
 
 To check the live floor price of a collection:
 
 !check {slug}
 
-e.g. !check hapeprime 
+e.g. !check hapeprime  <br /> <br />
 
 # TOKENS.PY
 
