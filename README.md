@@ -17,7 +17,7 @@ Limitations of the bot:
 
 # HOW TO USE BOT - COMMANDS
 
-To greet bot:
+# To greet bot:
 
 !hello
 
