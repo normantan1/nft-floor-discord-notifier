@@ -4,9 +4,9 @@ import json
 from discord.ext import tasks
 
 
-slug_price_increase = {}
-slug_price_decrease = {}
-list = []
+slug_price_increase = {} #dictionary of slugs where price target of collection is higher than the current floor price
+slug_price_decrease = {} #dictionary of slugs where price target of collection is lower than the current floor price
+list = [] #list of slugs user is interested in
 
 intents = discord.Intents.default()
 intents.members = True
@@ -16,17 +16,15 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
-    if not ping.is_running():
+    if not ping.is_running(): #prevents RuntimeError: Task is already launched and is not completed
         ping.start()
-    #prevents RuntimeError: Task is already launched and is not completed.
-
-@tasks.loop(seconds= 3)
-async def ping():
+    
+@tasks.loop(seconds= 3) # time cannot be set too low to prevent being rate limited by openseaa public api
+async def ping(): #task repeats every 3 seconds to check if floor has reached the specified threshold set by the user
 
     channel = client.get_channel(channel_id)
 
-    for slug in slug_price_decrease.copy():
-        #prevents RuntimeError: dictionary changed size during iteration
+    for slug in slug_price_decrease.copy(): # .copy prevents RuntimeError: dictionary changed size during iteration
         curr_floor = check_floor(slug)
         if slug_price_decrease[slug] >= curr_floor:
             await channel.send(f'{slug} has reached your price target of {curr_floor}')
@@ -43,8 +41,7 @@ async def ping():
 @client.event
 async def on_message(message):
 
-    #prevents message from bot from triggering command
-    if message.author == client.user:
+    if message.author == client.user: #prevents message from bot from triggering command
         return
     
 
@@ -75,7 +72,7 @@ async def on_message(message):
                 else:
                     curr_floor = check_floor(slug)
                     
-                    #check to make sure floor is not equals to price target
+                    #check to make sure floor is not equal to price target
                     if curr_floor == price:
                         await message.channel.send('Price target is same as current price, please set a valid price target.')
                         pass
