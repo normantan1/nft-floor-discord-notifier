@@ -19,7 +19,7 @@ async def on_ready():
     if not ping.is_running(): #prevents RuntimeError: Task is already launched and is not completed
         ping.start()
     
-@tasks.loop(seconds= 3) # time cannot be set too low to prevent being rate limited by openseaa public api
+@tasks.loop(seconds= 3) # time cannot be set too low to prevent being rate limited by opensea public api
 async def ping(): #task repeats every 3 seconds to check if floor has reached the specified threshold set by the user
 
     channel = client.get_channel(channel_id)
