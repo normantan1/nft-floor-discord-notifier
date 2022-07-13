@@ -215,7 +215,7 @@ async def on_message(message):
 
 
 
-def check_slug_validity(slug):
+def check_slug_validity(slug): #check slug exists
 
     url = f'https://api.opensea.io/api/v1/collection/{slug}/stats'
 
@@ -228,7 +228,7 @@ def check_slug_validity(slug):
 
 
 
-def check_floor_validity(slug):
+def check_floor_validity(slug): #check that collection has a floor price and has activty as there are some dead collections that have slugs
 
     url = f'https://api.opensea.io/api/v1/collection/{slug}/stats'
 
