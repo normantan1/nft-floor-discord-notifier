@@ -21,11 +21,13 @@ To greet bot:
 
 !hello
 
+
 To monitor collections:
 
 !add {slug} {price target}
 
 e.g. !add hapeprime 1
+
 
 To remove monitored collections:
 
@@ -33,9 +35,11 @@ To remove monitored collections:
 
 e.g. !dlt hapeprime
 
+
 To view your monitored collections:
 
 $view
+
 
 To save slugs to your personalised list:
 
@@ -43,15 +47,18 @@ To save slugs to your personalised list:
 
 e.g. !save hapeprime
 
+
 To remove collections from personalised list:
 
 !rmv (slug}
 
 e.g. !rmv hapeprime
 
+
 To view your personalised list:
 
 !list
+
 
 To check the live floor price of a collection:
 
