@@ -17,16 +17,16 @@ Limitations of the bot:
 
 # HOW TO USE BOT - COMMANDS
 
-# To greet bot:
+To greet bot:
 
-!hello
+!hello <br />
 
 
 To monitor collections:
 
 !add {slug} {price target}
 
-e.g. !add hapeprime 1
+e.g. !add hapeprime 1 
 
 
 To remove monitored collections:
