@@ -30,26 +30,36 @@ e.g. !add hapeprime 1
 To remove monitored collections:
 
 !dlt (slug}
+
 e.g. !dlt hapeprime
 
 To view your monitored collections:
+
 $view
 
 To save slugs to your personalised list:
+
 !save {slug}
+
 e.g. !save hapeprime
 
 To remove collections from personalised list:
+
 !rmv (slug}
+
 e.g. !rmv hapeprime
 
 To view your personalised list:
+
 !list
 
 To check the live floor price of a collection:
+
 !check {slug}
+
 e.g. !check hapeprime 
 
 # TOKENS.PY
+
 TOKEN refers to the discord token of your discord bot 
 channel_id refers to the ID of the channel you want the alerts to be sent to (turn on developer mode in order to copy channel id)
