@@ -1,6 +1,6 @@
 # NFT OPENSEA FLOOR DISCORD NOTIFIER
 
-Function of this bot includes 
+Function of this bot includes:
 1. notifying its user when the floor price of an NFT reaches a specified threshold by its user 
 2. checking of the floor price of a collection
 3. saving a list of slug of the collection the user is interested in
