@@ -19,7 +19,7 @@ Limitations of the bot:
 
 To greet bot:
 
-!hello <br />
+!hello <br /> <br />
 
 
 To monitor collections:
