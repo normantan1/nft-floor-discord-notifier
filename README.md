@@ -62,4 +62,5 @@ e.g. !check hapeprime
 # TOKENS.PY
 
 TOKEN refers to the discord token of your discord bot 
+
 channel_id refers to the ID of the channel you want the alerts to be sent to (turn on developer mode in order to copy channel id)
