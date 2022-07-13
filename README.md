@@ -11,7 +11,7 @@ Features of the bot includes:
 3. Checking that the commands issued are correect
 
 Limitations of the bot:
-1. Using opensea pubilc API with a rate limit of 4 requests per second and the actual rate limit is lower than that
+1. Using opensea public API with a rate limit of 4 requests per second with the actual rate limit being lower than that
 2. Not compatible with multiple users at the moment
 3. List of monitored collections and list of slugs user is interested in are not saved once program stops running
 
