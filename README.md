@@ -38,7 +38,7 @@ e.g. !dlt hapeprime <br /> <br />
 
 To view your monitored collections:
 
-$view <br /> <br />
+!view <br /> <br />
 
 
 To save slugs to your personalised list:
